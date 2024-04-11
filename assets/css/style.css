@@ -2053,6 +2053,7 @@ section {
   display: flex;
   align-items: center;
 }
+
 /**
 ----------- Media Query
 */
@@ -2086,5 +2087,8 @@ section {
   }
   .last-card {
     margin-top: 0px;
+  }
+  #topbar {
+    display: none !important;
   }
 }
