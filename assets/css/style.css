@@ -707,7 +707,7 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services .icon-box {
-  padding: 30px;
+  padding: 60px 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -993,13 +993,22 @@ section {
 --------------------------------------------------------------*/
 .home .aos-init,
 .home .home-slider,
-.home .home-item {
+.home {
   height: 100%;
+}
+.home-slider {
+  background-color: white;
+  height: 600px !important;
+}
+
+.home-item {
+  height: 580px;
 }
 
 .home-item img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .testimonials {
@@ -1923,6 +1932,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-right: 1px solid #ed951278;
+
 }
 .pt-subscribe-time {
   padding: 60px 0;
@@ -1932,6 +1943,7 @@ section {
 .pt-subscribe-time {
   display: flex;
   padding: 60px 0;
+  border-right: 1px solid #ed951278;
 }
 .pt-subscribe-location > i,
 .pt-subscribe-time > i {
@@ -2009,4 +2021,70 @@ section {
   font-weight: 600;
   color: #076509ad;
   line-height: 33px;
+}
+.icon svg {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-color);
+  padding: 6px;
+  border-radius: 60px;
+}
+
+.last-card {
+  margin-top: 40px;
+}
+
+.icon {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 60%;
+}
+
+.icon-box {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+/**
+----------- Media Query
+*/
+@media screen and (max-width: 520px) {
+  .home-slider, .home-item {
+    height: 400px !important;
+  }
+  .s-title {
+    padding: 10px 10px;
+  }
+  .s-title-header {
+    font-size: 32px;
+  }
+  .s-title-content {
+    padding: 10px 25px;
+  }
+  .s-title-content p {
+    line-height: 27px;
+  }
+  .pt-subscribe-location, .pt-subscribe-time {
+    display: flex;
+    padding: 35px 0 !important;
+    border-bottom: 1px solid #ed951278;
+  }
+  .tiger-subscribe-contact {
+    padding: 35px 0 !important;
+    border-bottom: 1px solid #ed951278;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .last-card {
+    margin-top: 0px;
+  }
 }
