@@ -1,0 +1,112 @@
+section.product-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 350px;
+    background-image: url(../img/gallery/bg.jpeg);
+    background-size: cover;
+}
+ .product-header-content {
+    position: absolute;
+    bottom: 0;
+    background:rgb(92 89 89 / 77%);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+}
+.product-breadcrums .active {
+    color: var(--primary-color-light);
+}
+.product-info{
+    grid-area: preferShow;
+}
+.product-list {
+    width: 350px;
+    padding: 15px;
+    background-color: #f7f9fa;
+    grid-area: secondShow;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 'secondShow  preferShow preferShow preferShow';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+.product-list .list-group-item {
+    margin: 7px;
+    border-radius: 0 !important;
+    box-shadow: 1px 1px 1px 1px #ddd;
+}
+.product-list h3 {
+    text-align: center;
+    padding: 10px;
+    color: var(--primary-color1);
+    border-bottom: 1px solid var(--primary-color5);
+}
+.product-list .list-group span {
+    font-size: 25px;
+    color: var(--primary-color1);
+}
+
+.product-list .list-group-item:hover {
+    box-shadow: 1px 1px 1px 1px var(--secondary-color1);
+    background: #ffdc71d1;
+}
+.product-list .list-group:hover span {
+    color: var(--secondary-color1);
+}
+.strike {
+    color: #e38780 !important;
+    font-size: 15px !important;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+table.attr-table {
+    width: 100%;
+}
+table.attr-table td {
+    border-bottom:1px solid var(--primary-color);
+    width: 50%;
+    font-weight: 600;
+    font-size: 14px;
+}
+.attribute-table {
+    padding: 12px;
+}
+.attribute-table th {
+    text-align: center;
+    background: var(--primary-color);
+    font-weight: 900;
+    font-size: 15px;
+}
+td.right {
+    border-left: 1px solid var(--primary-color);
+}
+td {
+    padding-left: 15px;
+}
+.img-tab {
+    height: 300px;
+    width: 100%; /* Ensure the container takes up the available width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Hide any parts of the image that exceed the container's bounds */
+}
+.img-tab img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
