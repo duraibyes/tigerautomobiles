@@ -50,4 +50,9 @@
         width: 100%;
     }
 
+    .grid-container {
+        grid-template-areas: 'preferShow' 'secondShow';
+        grid-template-columns: 1fr;
+    }
+
 }
