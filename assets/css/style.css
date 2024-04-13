@@ -1870,6 +1870,7 @@ section {
   width: 100%;
   display: inline-block;
   background: var(--primary-color);
+  padding: 0px 35px;
 }
 .pt-subscribe-location,
 .pt-subscribe-time {

@@ -1,58 +1,83 @@
-
 /**
 ----------- Media Query for small devices
 */
 @media screen and (max-width: 520px) {
-
-    .home-slider, .home-item {
-      height: 400px !important;
-    }
-    .s-title {
-      padding: 10px 10px;
-    }
-    .s-title-header {
-      font-size: 32px;
-    }
-    .s-title-content {
-      padding: 10px 25px;
-    }
-    .s-title-content p {
-      line-height: 27px;
-    }
-    .pt-subscribe-location, .pt-subscribe-time {
-      display: flex;
-      padding: 35px 0 !important;
-      border-bottom: 1px solid #ed951278;
-    }
-    .tiger-subscribe-contact {
-      padding: 35px 0 !important;
-      border-bottom: 1px solid #ed951278;
-    }
-    section {
-      padding: 40px 0;
-    }
-    .last-card {
-      margin-top: 0px;
-    }
-    #topbar {
-      display: none !important;
-    }
-    /**
+  .home-slider,
+  .home-item {
+    height: 400px !important;
+  }
+  .s-title {
+    padding: 10px 10px;
+  }
+  .s-title-header {
+    font-size: 32px;
+  }
+  .s-title-content {
+    padding: 10px 25px;
+  }
+  .s-title-content p {
+    line-height: 27px;
+  }
+  .pt-subscribe-location,
+  .pt-subscribe-time {
+    display: flex;
+    padding: 35px 0 !important;
+    border-bottom: 1px solid #ed951278;
+  }
+  .tiger-subscribe-contact {
+    padding: 35px 0 !important;
+    border-bottom: 1px solid #ed951278;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .last-card {
+    margin-top: 0px;
+  }
+  #topbar {
+    display: none !important;
+  }
+  /**
     product detail page
     */
-    section.product-header {
-        height: 170px;
-    }
-    .product-title {
-        font-size: 36px;
-    }
-    .product-list {
-        width: 100%;
-    }
+  section.product-header {
+    height: 170px;
+  }
+  .product-title {
+    font-size: 36px;
+  }
+  .product-list {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 100%; /* Full width for smaller screens */
+  }
 
-    .grid-container {
-        grid-template-areas: 'preferShow' 'secondShow';
-        grid-template-columns: 1fr;
-    }
+  .product-list {
+    grid-area: 2 / 1 / 3 / 2; /* Moves to second row on smaller screens */
+  }
 
+  .product-info {
+    grid-area: 1 / 1 / 2 / 2; /* Occupies full width on smaller screens */
+  }
+  .rl-item {
+    height: 300px;
+  }
+  .rl-img-pane {
+    height: 200px;
+  }
+  .rl-text {
+    padding: 5px 2px;
+  }
+  .rl-text p {
+    margin-bottom: 0px;
+    font-size: 11px;
+  }
+  .rl-text h4 {
+    font-size: 13px;
+  }
+  .rl-text a {
+    padding: 2px 12px;
+    font-size: 14px;
+  }
 }

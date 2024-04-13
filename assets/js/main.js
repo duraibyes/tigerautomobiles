@@ -216,23 +216,16 @@
     }
   });
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.rl-slider', {
     speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
+    loop: false,
+    slidesPerView: 3,
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
     }
-  });
+});
 
   /**
    * Porfolio isotope and filter
