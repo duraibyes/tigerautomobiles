@@ -218,8 +218,21 @@
 
   new Swiper('.rl-slider', {
     speed: 600,
-    loop: false,
-    slidesPerView: 3,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto', // Set slidesPerView to 'auto' to fit as many slides as possible
+    breakpoints: {
+        // Set breakpoints for different screen sizes
+        768: {
+            slidesPerView: 3 // Show only one slide per view on screens equal to or smaller than 768px
+        },
+        520: {
+          slidesPerView: 1 // Show only one slide per view on screens equal to or smaller than 768px
+        }
+    },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
