@@ -180,6 +180,7 @@ img.rl-img {
 .rl-img-pane {
     height: 250px;
     overflow: hidden;
+    background: #0000000a;
 }
 
 .rl-text {
