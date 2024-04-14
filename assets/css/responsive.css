@@ -61,7 +61,7 @@
     grid-area: 1 / 1 / 2 / 2; /* Occupies full width on smaller screens */
   }
   .rl-item {
-    height: 300px;
+    height: 340px !important;
   }
   .rl-img-pane {
     height: 200px;
@@ -76,5 +76,12 @@
   .rl-text a {
     padding: 2px 52px;
     font-size: 14px;
+  }
+
+  .investor-title h4 {
+    font-size: 32px;
+  }
+  .investor-content1 {
+    padding: 20px 20px;
   }
 }
