@@ -92,4 +92,12 @@
   .about-image img {
     width: 100%;
   }
+  .contact-form {
+    position: unset;
+    height: auto;
+  }
+  .form {
+    position: unset;
+    width: auto;
+  }
 }
